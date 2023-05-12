@@ -1,10 +1,13 @@
-<script type="module">
-	import init, {add, greet} from "./pkg/rust_wasm_project.js";
+<html>
+	
+	<script type="module">
+		import init, {add, greet} from "./pkg/rust_wasm_project.js";
 
-	await init();
+		await init();
 
-	greet("Hi am I alive");
+		greet("Hi am I alive");
 
-	let res = add(1,2);
-	console.log("1 + 2 = %d", res);
-</script>>
+		let res = add(1,2);
+		console.log("1 + 2 = %d", res);
+	</script>
+</html>
