@@ -1,0 +1,10 @@
+<script type="module">
+	import init, {add, greet} from "./pkg/rust_wasm_project.js";
+
+	await init();
+
+	greet("Hi am I alive");
+
+	let res = add(1,2);
+	console.log("1 + 2 = %d", res);
+</script>>
